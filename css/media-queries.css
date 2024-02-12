@@ -1,0 +1,101 @@
+@media only screen and (min-width: 540px) {
+	.encryptDecrypt__header h1 {
+		font-size: 3.6rem;
+	}
+
+	.textInput__indication p {
+		font-size: 1.4rem;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.textInput__buttons {
+		column-gap: 2rem;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.encryptDecrypt__containerSecondary,
+	.encryptDecrypt__header {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.encryptDecrypt__header h1 {
+		font-size: 4.6rem;
+	}
+
+	.encryptDecrypt__containerSecondary {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.encryptDecrypt__textInput {
+		display: flex;
+		flex-direction: column;
+		border-bottom: none;
+		margin-top: 0;
+		padding-bottom: 0;
+		width: 65%;
+	}
+
+	.encryptDecrypt__textInput form {
+		display: flex;
+		height: 100%;
+	}
+
+	.encryptDecrypt__textInput textarea {
+		flex: 1;
+	}
+
+	.textInput__buttons {
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.encryptDecrypt__textOutput {
+		margin-bottom: 2rem;
+		padding-bottom: 0;
+		padding-top: 0;
+		width: 35%;
+	}
+
+	.textOutput__message {
+		flex: 1;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.textOutput__message img {
+		display: block;
+		width: 60%;
+	}
+
+	.textOutput__buttonCopy {
+		height: auto;
+		justify-content: center;
+		padding-bottom: 2rem;
+		padding-top: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	.footer {
+		column-gap: 1rem;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.footer p:nth-child(2) {
+		color: coral;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.encryptDecrypt__containerSecondary,
+	.encryptDecrypt__header {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}

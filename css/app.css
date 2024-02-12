@@ -1,0 +1,182 @@
+/* ++++++++++++++++++++++++ VARIABLES ++++++++++++++++++++++++ */
+
+:root {
+    --background-color: #F3F5FC;
+    --dark-blue-color: #072B61;
+    --light-gray-color: #D8DFE8;
+    --text-gray-color: #495057;
+    --white-color: #FFF;
+}
+
+/* ++++++++++++++++++++++ GLOBAL STYLES ++++++++++++++++++++++ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+}
+
+.encryptDecrypt__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.encryptDecrypt__containerSecondary {
+    flex: 1;
+    width: 100%;
+}
+
+/* +++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++ */
+
+.encryptDecrypt__header {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    margin: 4rem 1.6rem;
+}
+
+.encryptDecrypt__header h1 {
+    font-size: 2.6rem;
+}
+
+/* +++++++++++++++ TEXT TO ENCRYPT OR DECRYPT ++++++++++++++++ */
+
+.encryptDecrypt__textInput {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    padding-bottom: 4rem;
+}
+
+.encryptDecrypt__textInput textarea {
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    outline: none;
+    padding: 2rem;
+    resize: none;
+    width: 100%;
+}
+
+.textInput__indication {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.textInput__indication p {
+    color: var(--text-gray-color);
+}
+
+/* +++++++++++++++ ENCRYPT AND DECRYPT BUTTONS +++++++++++++++ */
+
+.textInput__buttons,
+.textOutput__buttonCopy {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.textInput__buttons button,
+.textOutput__buttonCopy button {
+    background-color: transparent;
+    border: 0.1px solid var(--text-gray-color);
+    border-radius: 2.4rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 2.4rem;
+    transition: all .2s ease-in-out;
+}
+
+.textInput__buttons button:hover,
+.textOutput__buttonCopy button:hover {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+}
+
+/* +++++++++++++++++++++++ TEXT OUTPUT +++++++++++++++++++++++ */
+
+.encryptDecrypt__textOutput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    height: auto;
+    margin: 0 1.6rem 4rem;
+    padding-bottom: 3.2rem;
+    padding-top: 3.2rem;
+}
+
+.textOutput__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.textOutput__message img {
+    display: none;
+}
+
+.textOutput__message h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.textOutput__message p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* +++++++++++++++++++++ COPY TEXT BUTTON +++++++++++++++++++++ */
+
+.textOutput__buttonCopy {
+    display: none;
+    padding-top: 3.2rem;
+    width: 100%;
+}
+
+.textOutput__buttonCopy button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* ++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++ */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--text-gray-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

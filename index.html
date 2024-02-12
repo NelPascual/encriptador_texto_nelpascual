@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Encriptador de Texto - Challenge</title>
+		<link rel="shortcut icon" href="img/logo_alura_white.svg" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/media-queries.css">
+	</head>
+	<body>
+		<div class="encryptDecrypt__container">
+			<header class="encryptDecrypt__header">
+				<img src="img/logo_alura.svg" alt="Logo Alura">
+				<h1></h1>
+			</header>
+			<div class="encryptDecrypt__containerSecondary">
+				<div class="encryptDecrypt__textInput">
+					<form action="">
+						<textarea name="text" id="text" cols="30" rows="10"></textarea>
+					</form>
+					<div class="textInput__indication">
+						<img src="img/alert.svg" alt="Símbolo de Alerta">
+						<p class="indication"></p>
+					</div>
+					<div class="textInput__buttons">
+						<button onclick="encrypt();">Encriptar</button>
+						<button onclick="decrypt();">Desencriptar</button>
+					</div>
+				</div>
+				<div class="encryptDecrypt__textOutput">
+					<div class="textOutput__message">
+						<img src="img/persona.png" alt="Imágen de Persona">
+						<h2></h2>
+						<p class="text-message"></p>
+					</div>
+					<div class="textOutput__buttonCopy">
+						<button onclick="copyText()">Copiar</button>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<p class="text1-footer"></p>
+				<p class="text2-footer"></p>
+				<p class="text3-footer"></p>
+			</footer>
+		</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>
